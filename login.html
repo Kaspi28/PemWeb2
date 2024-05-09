@@ -1,80 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <title>Login | Klinik Dental Gigi K7 </title>
+	<title>Login-Mediplus-Andre</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="icon" href="../medisen/img/favicon.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="shortcut icon" href="../favicon.png">
+
 </head>
 
-<body>
-    <div class="wrapper">
-        <form action="">
-            <h1>Login</h1>
-            <div class="input-box">
-                <input type="text" id="username" placeholder="username" required>
-                <i class='bx bxs-user'></i>
+<body class="img js-fullheight" style="background-image: url(../medisen/images/banner-bg1.png);">
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap p-0">
+						<h3 class="mb-4 text-center">Memiliki Akun?</h3>
+						<form action="" method="POST" class="signin-form">
+							<div class="form-group">
+								<input type="text" name="username" id="username" class="form-control"
+									placeholder="Username" required>
+							</div>
+							<div class="form-group">
+								<input type="password" name="password" id="password" class="form-control"
+									placeholder="Password" required>
+								<span toggle="#password-field"
+									class="fa fa-fw fa-eye field-icon toggle-password"></span>
+							</div>
+							<div class="form-group">
+								<button type="submit" onclick="return login()"
+									class="form-control btn btn-primary submit px-3">MASUK</button>
+							</div>
+							<div class="form-group d-md-flex">
+								<div class="w-50">
+									<label class="checkbox-wrap checkbox-primary">Remember Me
+										<input type="checkbox" checked>
+										<span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="w-50 text-md-right">
+									<a href="#" style="color: #fff">Forgot Password</a>
+								</div>
+							</div>
+							<p class="mb-0">
+								<a href="registrasi.html" class="text-center">Daftar Sekarang</a>
+							</p>
+						</form>
+						<p class="w-100 text-center">&mdash; Or Sign In With &mdash;</p>
+						<div class="social d-flex text-center">
+							<a href="#" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span>
+								Facebook</a>
+							<a href="#" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span>
+								Twitter</a>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+	</section>
 
-
-            </div>
-            <div class="input-box">
-                <input type="password" id="password" placeholder="password" required>
-                <i class='bx bxs-lock-alt'></i>
-
-            </div>
-
-            <div class="remember-forgot">
-                <label><input type="checkbox">Remember me</label>
-                <a href="#">Forgot password</a>
-            </div>
-
-            <button type="button" onclick="login()" class="btn">Login</button>
-            <div class="register-lingk"></div>
-            <p>Halaman Utama <a href="../Klinik K7 Mirah Kinaya/index.html">home</a>
-            </p>
-
-    </div>
-    </form>
-    </div>
-    <script>
-        function login() {
-            var user = document.getElementById("username").value;
-            var pass = document.getElementById("password").value;
-
-            if (user == "admin" && pass == "kel7") {
-                Swal.fire({
-                    title: "Good job!",
-                    text: "You clicked the button!",
-                    icon: "success"
-                });
-                // Menunda window.location menggunakan setInterval
-                var intervalID = setInterval(function () {
-                    clearInterval(intervalID); // Menghentikan interval setelah satu kali eksekusi
-                    window.location = "../dashboard nazwa gita/index2.html";
-                }, 2000); // Menunda selama 2 detik (ubah sesuai kebutuhan)
-                return false;
-            }
-            else if (user == "" || pass == "") {
-                Swal.fire({
-                    icon: "error",
-                    title: "Oops...",
-                    text: "Username atau Password Empty!",
-                });
-                return false;
-            }
-            else {
-                Swal.fire({
-                    icon: "error",
-                    title: "Oops...",
-                    text: "Username atau Password Not Betul! Isi Yang Corect Dung!",
-                });
-            }
-        }
-    </script>
-
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="auth.js"></script>
 </body>
 
 </html>

@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Praktikum Madiri</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">		
+    <title>Teethcare-Wahyu</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -14,13 +14,15 @@
     <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    
+    <!-- tambahkan favicon -->
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <nav class="main-header navbar navbar-expand navbar-dark navbar-light">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -30,13 +32,20 @@
                     <a href="index.php" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="data_pasien.php" class="nav-link">Data Pasien</a>
+                    <a href="pasien" class="nav-link">Pasien</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="data_paramedik.php" class="nav-link">Data Paramedik</a>
+                    <a href="paramedik" class="nav-link">Paramedik</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="data_periksa.php" class="nav-link">Data Pemeriksaan</a>
+                    <a h
+                    ref="periksa" class="nav-link">Periksa</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="kelurahan" class="nav-link">Kelurahan</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="unit_kerja" class="nav-link">Unit Kerja</a>
                 </li>
             </ul>
 
